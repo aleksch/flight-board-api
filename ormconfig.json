@@ -5,7 +5,7 @@
   "username": "flight_admin",
   "password": "test",
   "database": "flight_board_db",
-  "synchronize": true,
+  "synchronize": false,
   "logging": false,
   "entities": [
     "src/entity/**/*.ts"
@@ -15,5 +15,10 @@
   ],
   "subscribers": [
     "src/subscriber/**/*.ts"
-  ]
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+ }
 }
